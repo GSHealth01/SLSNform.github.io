@@ -126,7 +126,7 @@ const Index = () => {
             {/* Question 1 - MCQ */}
             <div className="space-y-3">
               <Label className="text-sm font-medium text-foreground">
-                1. Which calcium channel reduces blood pressure by dilating arteries...? *
+                1. Which calcium channel reduces blood pressure by dilating arteries?
               </Label>
               <RadioGroup
                 value={formData.q1}
@@ -164,7 +164,7 @@ const Index = () => {
             {/* Question 2 - MCQ */}
             <div className="space-y-3">
               <Label className="text-sm font-medium text-foreground">
-                2. Which drug acts on both L- and N- type calcium channels...? *
+                2. Which drug acts on both L- and N- type calcium channels?
               </Label>
               <RadioGroup
                 value={formData.q2}
@@ -240,7 +240,7 @@ const Index = () => {
             {/* Question 4 - MCQ */}
             <div className="space-y-3">
               <Label className="text-sm font-medium text-foreground">
-                4. The characteristic feature of acute kidney injury (AKI) is...? *
+                4. The characteristic feature of acute kidney injury (AKI) is?
               </Label>
               <RadioGroup
                 value={formData.q4}
@@ -316,7 +316,7 @@ const Index = () => {
             {/* Question 6 - MCQ */}
             <div className="space-y-3">
               <Label className="text-sm font-medium text-foreground">
-                6. Which membrane is used in peritoneal dialysis...? *
+                6. Which membrane is used in peritoneal dialysis?
               </Label>
               <RadioGroup
                 value={formData.q6}
@@ -354,7 +354,7 @@ const Index = () => {
             {/* Question 7 - Text Input */}
             <div className="space-y-2">
               <Label htmlFor="q7" className="text-sm font-medium text-foreground">
-                7. What is the brand name of 4th generation calcium channel blocker (Cilnidipine) marketed by George Steuart Health...? *
+                7. What is the brand name of 4th generation calcium channel blocker (Cilnidipine) marketed by George Steuart Health?
               </Label>
               <Input
                 id="q7"
@@ -370,7 +370,7 @@ const Index = () => {
             {/* Question 8 - Text Input */}
             <div className="space-y-2">
               <Label htmlFor="q8" className="text-sm font-medium text-foreground">
-                8. What is the brand name of Metolazone product marketed by George Steuart Health...? *
+                8. What is the brand name of Metolazone product marketed by George Steuart Health?
               </Label>
               <Input
                 id="q8"
@@ -386,7 +386,7 @@ const Index = () => {
             {/* Question 9 - Text Input */}
             <div className="space-y-2">
               <Label htmlFor="q9" className="text-sm font-medium text-foreground">
-                9. What is the brand name of Darbepoetin alfa IV marketed by Divasa Pharma...? *
+                9. What is the brand name of Darbepoetin alfa IV marketed by Divasa Pharma?
               </Label>
               <Input
                 id="q9"

@@ -202,7 +202,7 @@ const Index = () => {
             {/* Question 3 - MCQ */}
             <div className="space-y-3">
               <Label className="text-sm font-medium text-foreground">
-                3. Hypertensive emergency requires...? *
+                3. Hypertensive emergency requires?
               </Label>
               <RadioGroup
                 value={formData.q3}
@@ -278,7 +278,7 @@ const Index = () => {
             {/* Question 5 - MCQ */}
             <div className="space-y-3">
               <Label className="text-sm font-medium text-foreground">
-                5. The most commonly used type of dialysis is...? *
+                5. The most commonly used type of dialysis is?
               </Label>
               <RadioGroup
                 value={formData.q5}

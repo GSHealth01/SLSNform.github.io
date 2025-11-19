@@ -108,7 +108,7 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen w-full bg-gradient-to-br from-gradient-start to-gradient-end flex items-center justify-center p-4 sm:p-6 md:p-8">
+    <div className="min-h-screen w-full flex items-center justify-center p-4 sm:p-6 md:p-8">
       <Card className="w-full max-w-2xl shadow-[var(--form-shadow)] border-0">
         <CardHeader className="text-center space-y-1 pb-6">
           <CardTitle className="text-xl sm:text-2xl font-bold text-foreground leading-tight">

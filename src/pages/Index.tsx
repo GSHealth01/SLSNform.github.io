@@ -40,6 +40,25 @@ const Index = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    
+    // Validate all MCQ questions are answered
+    if (!formData.q1 || !formData.q2 || !formData.q3 || !formData.q4 || !formData.q5 || !formData.q6) {
+      toast.error("Please answer all multiple choice questions");
+      return;
+    }
+    
+    // Validate all text inputs are filled
+    if (!formData.q7.trim() || !formData.q8.trim() || !formData.q9.trim()) {
+      toast.error("Please answer all brand name questions");
+      return;
+    }
+    
+    // Validate personal information
+    if (!formData.name.trim() || !formData.station.trim() || !formData.contact.trim() || !formData.specialty) {
+      toast.error("Please fill in all personal information fields");
+      return;
+    }
+    
     setIsSubmitting(true);
 
     try {
@@ -91,11 +110,14 @@ const Index = () => {
   return (
     <div className="min-h-screen w-full bg-gradient-to-br from-gradient-start to-gradient-end flex items-center justify-center p-4 sm:p-6 md:p-8">
       <Card className="w-full max-w-2xl shadow-[var(--form-shadow)] border-0">
-        <CardHeader className="text-center space-y-2 pb-6">
-          <CardTitle className="text-2xl sm:text-3xl font-bold text-foreground leading-tight">
-            SRI LANKA SOCIETY OF NEPHROLOGY - 6th ANNUAL ACADEMIC SESSIONS 2025
+        <CardHeader className="text-center space-y-1 pb-6">
+          <CardTitle className="text-xl sm:text-2xl font-bold text-foreground leading-tight">
+            SRI LANKA SOCIETY OF NEPHROLOGY
           </CardTitle>
-          <CardDescription className="text-muted-foreground">
+          <CardTitle className="text-lg sm:text-xl font-bold text-foreground">
+            6th ANNUAL ACADEMIC SESSIONS 2025
+          </CardTitle>
+          <CardDescription className="text-muted-foreground pt-2">
             Powered by George Steuart Health (Pvt) Ltd.
           </CardDescription>
         </CardHeader>

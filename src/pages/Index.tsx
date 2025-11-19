@@ -482,8 +482,8 @@ const Index = () => {
                       <SelectItem value="House Officer / Intern Medical Officer">
                         House Officer / Intern Medical Officer
                       </SelectItem>
-                      <SelectItem value="General Practitioner (Privet Only)">
-                        General Practitioner (Privet Only)
+                      <SelectItem value="General Practitioner (Private Only)">
+                        General Practitioner (Private Only)
                       </SelectItem>
                       <SelectItem value="Medical Student">
                         Medical Student

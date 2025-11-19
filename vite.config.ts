@@ -5,7 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: '/SLSNform.github.io/',
+  base: mode === 'production' ? '/SLSNform.github.io/' : '/',
   server: {
     host: "::",
     port: 8080,

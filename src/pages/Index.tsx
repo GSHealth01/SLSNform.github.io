@@ -92,9 +92,11 @@ const Index = () => {
     <div className="min-h-screen w-full bg-gradient-to-br from-gradient-start to-gradient-end flex items-center justify-center p-4 sm:p-6 md:p-8">
       <Card className="w-full max-w-2xl shadow-[var(--form-shadow)] border-0">
         <CardHeader className="text-center space-y-2 pb-6">
-          <CardTitle className="text-3xl font-bold text-foreground">Medical Survey Form</CardTitle>
+          <CardTitle className="text-2xl sm:text-3xl font-bold text-foreground leading-tight">
+            SRI LANKA SOCIETY OF NEPHROLOGY - 6th ANNUAL ACADEMIC SESSIONS 2025
+          </CardTitle>
           <CardDescription className="text-muted-foreground">
-            Please fill out all fields below
+            Powered by George Steuart Health (Pvt) Ltd.
           </CardDescription>
         </CardHeader>
         <CardContent>

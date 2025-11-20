@@ -18,7 +18,6 @@ const Index = () => {
     q6: "",
     q7: "",
     q8: "",
-    q9: "",
     name: "",
     station: "",
     contact: "",
@@ -42,13 +41,13 @@ const Index = () => {
     e.preventDefault();
     
     // Validate all MCQ questions are answered
-    if (!formData.q1 || !formData.q2 || !formData.q3 || !formData.q4 || !formData.q5 || !formData.q6) {
+    if (!formData.q1 || !formData.q2 || !formData.q3 || !formData.q4 || !formData.q5) {
       toast.error("Please answer all multiple choice questions");
       return;
     }
-    
+
     // Validate all text inputs are filled
-    if (!formData.q7.trim() || !formData.q8.trim() || !formData.q9.trim()) {
+    if (!formData.q6.trim() || !formData.q7.trim() || !formData.q8.trim()) {
       toast.error("Please answer all brand name questions");
       return;
     }
@@ -91,7 +90,6 @@ const Index = () => {
           q6: "",
           q7: "",
           q8: "",
-          q9: "",
           name: "",
           station: "",
           contact: "",
@@ -126,7 +124,7 @@ const Index = () => {
             {/* Question 1 - MCQ */}
             <div className="space-y-3">
               <Label className="text-sm font-medium text-foreground">
-                1. Which calcium channel reduces blood pressure by dilating arteries?
+                1. Which calcium channel blocker reduces blood pressure by dilating arteries ?
               </Label>
               <RadioGroup
                 value={formData.q1}
@@ -137,25 +135,25 @@ const Index = () => {
                 <div className="flex items-center space-x-2">
                   <RadioGroupItem value="N - type calcium channels" id="q1-option1" />
                   <Label htmlFor="q1-option1" className="font-normal cursor-pointer">
-                    N - type calcium channels
+                    N - type calcium channels blocker
                   </Label>
                 </div>
                 <div className="flex items-center space-x-2">
                   <RadioGroupItem value="L - type calcium channels" id="q1-option2" />
                   <Label htmlFor="q1-option2" className="font-normal cursor-pointer">
-                    L - type calcium channels
+                    L - type calcium channels blocker
                   </Label>
                 </div>
                 <div className="flex items-center space-x-2">
                   <RadioGroupItem value="R - type calcium channels" id="q1-option3" />
                   <Label htmlFor="q1-option3" className="font-normal cursor-pointer">
-                    R - type calcium channels
+                    R - type calcium channels blocker
                   </Label>
                 </div>
                 <div className="flex items-center space-x-2">
                   <RadioGroupItem value="T - type calcium channels" id="q1-option4" />
                   <Label htmlFor="q1-option4" className="font-normal cursor-pointer">
-                    T - type calcium channels
+                    T - type calcium channels blocker
                   </Label>
                 </div>
               </RadioGroup>
@@ -164,7 +162,7 @@ const Index = () => {
             {/* Question 2 - MCQ */}
             <div className="space-y-3">
               <Label className="text-sm font-medium text-foreground">
-                2. Which drug acts on both L- and N- type calcium channels?
+               2. Which drug acts on both L- and N- type calcium channels ?
               </Label>
               <RadioGroup
                 value={formData.q2}
@@ -202,7 +200,7 @@ const Index = () => {
             {/* Question 3 - MCQ */}
             <div className="space-y-3">
               <Label className="text-sm font-medium text-foreground">
-                3. Hypertensive emergency requires?
+                3. Metolazone acts primarily on which nephron segment ?
               </Label>
               <RadioGroup
                 value={formData.q3}
@@ -211,27 +209,27 @@ const Index = () => {
                 className="space-y-2"
               >
                 <div className="flex items-center space-x-2">
-                  <RadioGroupItem value="Oral medications" id="q3-option1" />
+                  <RadioGroupItem value="Early distal convoluted tubule" id="q3-option1" />
                   <Label htmlFor="q3-option1" className="font-normal cursor-pointer">
-                    Oral medications
+                    Early distal convoluted tubule
                   </Label>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <RadioGroupItem value="Gradual BP reduction over weeks" id="q3-option2" />
+                  <RadioGroupItem value="Thick ascending limb" id="q3-option2" />
                   <Label htmlFor="q3-option2" className="font-normal cursor-pointer">
-                    Gradual BP reduction over weeks
+                    Thick ascending limb
                   </Label>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <RadioGroupItem value="No treatment" id="q3-option3" />
+                  <RadioGroupItem value="Proximal tubule" id="q3-option3" />
                   <Label htmlFor="q3-option3" className="font-normal cursor-pointer">
-                    No treatment
+                    Proximal tubule
                   </Label>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <RadioGroupItem value="Immediate IV Antihypertensives" id="q3-option4" />
+                  <RadioGroupItem value="Collecting duct" id="q3-option4" />
                   <Label htmlFor="q3-option4" className="font-normal cursor-pointer">
-                    Immediate IV Antihypertensives
+                    Collecting duct
                   </Label>
                 </div>
               </RadioGroup>
@@ -240,7 +238,7 @@ const Index = () => {
             {/* Question 4 - MCQ */}
             <div className="space-y-3">
               <Label className="text-sm font-medium text-foreground">
-                4. The characteristic feature of acute kidney injury (AKI) is?
+                4. Which electrolyte abnormality is MOST strongly associated with metolazone in nephrology patients ?
               </Label>
               <RadioGroup
                 value={formData.q4}
@@ -249,27 +247,27 @@ const Index = () => {
                 className="space-y-2"
               >
                 <div className="flex items-center space-x-2">
-                  <RadioGroupItem value="Polyuria" id="q4-option1" />
+                  <RadioGroupItem value="Hyperkalemia" id="q4-option1" />
                   <Label htmlFor="q4-option1" className="font-normal cursor-pointer">
-                    Polyuria
+                    Hyperkalemia
                   </Label>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <RadioGroupItem value="Sudden rise in serum creatinine" id="q4-option2" />
+                  <RadioGroupItem value="Hyponatremia" id="q4-option2" />
                   <Label htmlFor="q4-option2" className="font-normal cursor-pointer">
-                    Sudden rise in serum creatinine
+                    Hyponatremia
                   </Label>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <RadioGroupItem value="Decreased serum potassium" id="q4-option3" />
+                  <RadioGroupItem value="Hypercalcemia" id="q4-option3" />
                   <Label htmlFor="q4-option3" className="font-normal cursor-pointer">
-                    Decreased serum potassium
+                    Hypercalcemia
                   </Label>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <RadioGroupItem value="Hypotension only" id="q4-option4" />
+                  <RadioGroupItem value="Hypermagnesemia" id="q4-option4" />
                   <Label htmlFor="q4-option4" className="font-normal cursor-pointer">
-                    Hypotension only
+                    Hypermagnesemia
                   </Label>
                 </div>
               </RadioGroup>
@@ -278,7 +276,7 @@ const Index = () => {
             {/* Question 5 - MCQ */}
             <div className="space-y-3">
               <Label className="text-sm font-medium text-foreground">
-                5. The most commonly used type of dialysis is?
+                5. Darbepoetin alfa is most commonly used for anemia associated with ?
               </Label>
               <RadioGroup
                 value={formData.q5}
@@ -287,74 +285,53 @@ const Index = () => {
                 className="space-y-2"
               >
                 <div className="flex items-center space-x-2">
-                  <RadioGroupItem value="Continuous renal replacement therapy" id="q5-option1" />
+                  <RadioGroupItem value="Acute blood loss" id="q5-option1" />
                   <Label htmlFor="q5-option1" className="font-normal cursor-pointer">
-                    Continuous renal replacement therapy
+                    Acute blood loss
                   </Label>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <RadioGroupItem value="Hemofiltration" id="q5-option2" />
+                  <RadioGroupItem value="Hemolytic anemia" id="q5-option2" />
                   <Label htmlFor="q5-option2" className="font-normal cursor-pointer">
-                    Hemofiltration
+                    Hemolytic anemia
                   </Label>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <RadioGroupItem value="Hemodialysis (HD)" id="q5-option3" />
+                  <RadioGroupItem value="Thalassemia major" id="q5-option3" />
                   <Label htmlFor="q5-option3" className="font-normal cursor-pointer">
-                    Hemodialysis (HD)
+                    Thalassemia major
                   </Label>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <RadioGroupItem value="Peritoneal dialysis (PD)" id="q5-option4" />
+                  <RadioGroupItem value="Chronic kidney disease" id="q5-option4" />
                   <Label htmlFor="q5-option4" className="font-normal cursor-pointer">
-                    Peritoneal dialysis (PD)
+                    Chronic kidney disease
                   </Label>
                 </div>
               </RadioGroup>
             </div>
 
-            {/* Question 6 - MCQ */}
-            <div className="space-y-3">
-              <Label className="text-sm font-medium text-foreground">
-                6. Which membrane is used in peritoneal dialysis?
+
+            {/* Question 6 - Text Input */}
+            <div className="space-y-2">
+              <Label htmlFor="q6" className="text-sm font-medium text-foreground">
+                6. What is the brand name of 4th generation calcium channel blocker (Cilnidipine) marketed by George Steuart Health?
               </Label>
-              <RadioGroup
+              <Input
+                id="q6"
+                name="q6"
                 value={formData.q6}
-                onValueChange={(value) => handleRadioChange("q6", value)}
+                onChange={handleInputChange}
+                placeholder="Enter brand name"
                 required
-                className="space-y-2"
-              >
-                <div className="flex items-center space-x-2">
-                  <RadioGroupItem value="Artificial membrane" id="q6-option1" />
-                  <Label htmlFor="q6-option1" className="font-normal cursor-pointer">
-                    Artificial membrane
-                  </Label>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <RadioGroupItem value="Dialyzer filter" id="q6-option2" />
-                  <Label htmlFor="q6-option2" className="font-normal cursor-pointer">
-                    Dialyzer filter
-                  </Label>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <RadioGroupItem value="Renal membrane" id="q6-option3" />
-                  <Label htmlFor="q6-option3" className="font-normal cursor-pointer">
-                    Renal membrane
-                  </Label>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <RadioGroupItem value="Peritoneal membrane" id="q6-option4" />
-                  <Label htmlFor="q6-option4" className="font-normal cursor-pointer">
-                    Peritoneal membrane
-                  </Label>
-                </div>
-              </RadioGroup>
+                className="bg-background border-input"
+              />
             </div>
 
             {/* Question 7 - Text Input */}
             <div className="space-y-2">
               <Label htmlFor="q7" className="text-sm font-medium text-foreground">
-                7. What is the brand name of 4th generation calcium channel blocker (Cilnidipine) marketed by George Steuart Health?
+                7. What is the brand name of Metolazone product marketed by George Steuart Health?
               </Label>
               <Input
                 id="q7"
@@ -370,28 +347,12 @@ const Index = () => {
             {/* Question 8 - Text Input */}
             <div className="space-y-2">
               <Label htmlFor="q8" className="text-sm font-medium text-foreground">
-                8. What is the brand name of Metolazone product marketed by George Steuart Health?
+                8. What is the brand name of Darbepoetin alfa IV marketed by Divasa Pharma?
               </Label>
               <Input
                 id="q8"
                 name="q8"
                 value={formData.q8}
-                onChange={handleInputChange}
-                placeholder="Enter brand name"
-                required
-                className="bg-background border-input"
-              />
-            </div>
-
-            {/* Question 9 - Text Input */}
-            <div className="space-y-2">
-              <Label htmlFor="q9" className="text-sm font-medium text-foreground">
-                9. What is the brand name of Darbepoetin alfa IV marketed by Divasa Pharma?
-              </Label>
-              <Input
-                id="q9"
-                name="q9"
-                value={formData.q9}
                 onChange={handleInputChange}
                 placeholder="Enter brand name"
                 required
